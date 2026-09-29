@@ -10,14 +10,14 @@ export default function Footer() {
         <div className="space-y-3">
           <span className="font-bold tracking-wider text-zinc-400 block">[Product]</span>
           <ul className="space-y-2 text-zinc-300">
-            <li><Link href="#itinerary" className="hover:underline">Itinerary Builder</Link></li>
-            <li><Link href="#quotation" className="hover:underline">Quotation Builder</Link></li>
-            <li><Link href="#invoice" className="hover:underline">Invoice Generator</Link></li>
-            <li><Link href="#costing" className="hover:underline">Costing Sheet</Link></li>
-            <li><Link href="#booking" className="hover:underline">Booking Manager</Link></li>
-            <li><Link href="#service" className="hover:underline">Service Voucher</Link></li>
-            <li><Link href="#transfer" className="hover:underline">Transfer Management</Link></li>
-            <li><Link href="#letter" className="hover:underline">Letter</Link></li>
+            <li><Link href="/itinerarymock" className="hover:underline">Itinerary Builder</Link></li>
+            <li><Link href="/quotationmock" className="hover:underline">Quotation Builder</Link></li>
+            <li><Link href="/invoicemock" className="hover:underline">Invoice Generator</Link></li>
+            <li><Link href="/costingmock" className="hover:underline">Costing Sheet</Link></li>
+            <li><Link href="/bookingmock" className="hover:underline">Booking Manager</Link></li>
+            <li><Link href="/servicemock" className="hover:underline">Service Voucher</Link></li>
+            <li><Link href="/transfermock" className="hover:underline">Transfer Management</Link></li>
+            <li><Link href="/lettermock" className="hover:underline">Letter</Link></li>
           </ul>
         </div>
 
@@ -41,7 +41,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact Information Column */}
+       
         <div className="space-y-3">
           <span className="font-bold tracking-wider text-zinc-400 block">[Contact]</span>
           <ul className="space-y-2 text-zinc-300">

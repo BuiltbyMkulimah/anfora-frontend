@@ -1,8 +1,8 @@
 'react';
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
 import Link from 'next/link';
 import { ArrowUpRight, Plus, FileText, Calculator, Users, ShieldAlert, CheckCircle2 } from 'lucide-react';
+import AdminNavbar from '@/app/components/AdminNavbar';
+import AdminFooter from '@/app/components/AdminFooter';
 
 export default function DashboardPage() {
   return (
@@ -10,15 +10,15 @@ export default function DashboardPage() {
       
       {/* Top System Bar */}
       <div className="border-b border-black bg-black text-white px-4 py-2 flex justify-between items-center text-xs font-mono uppercase tracking-widest">
-        <span>CLIENT TERMINAL // AUTHORIZED ACCESS</span>
+        <span>HERE IS WHERE THE MAGIC HAPPENS | OWN YOUR OWN MARGINS</span>
         <span className="flex items-center gap-2">
-          <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-          SYSTEM SECURE
+          <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
+          FINANCIAL MAGIC
         </span>
       </div>
 
       {/* Standard Site Navigation */}
-      <Navbar activeTab="DASHBOARD" />
+      <AdminNavbar activeTab="DASHBOARD" />
 
       {/* Dashboard Header Section */}
       <section className="px-4 py-12 border-b border-black relative bg-[#F5F2EB]">
@@ -27,21 +27,21 @@ export default function DashboardPage() {
         
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-2">[OPERATIONAL CONTROL // 05]</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-2">[WHAT ARE WE WORKING ON TODAY?]</p>
             <h1 className="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-none">
-              Welcome back, Operator.
+              Welcome back , Operator.
             </h1>
           </div>
           
           <div className="flex items-center gap-3">
             <Link 
-              href="/dashboard/quotations/new" 
+              href="/dashboard/quotations" 
               className="border border-black bg-black text-white px-4 py-2 text-xs font-bold uppercase tracking-wider hover:bg-transparent hover:text-black transition-colors flex items-center gap-2"
             >
               <Plus className="w-4 h-4" /> New Quotation
             </Link>
             <Link 
-              href="/dashboard/itineraries/new" 
+              href="/dashboard/itineraries" 
               className="border border-black bg-[#EBE7DF] px-4 py-2 text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors flex items-center gap-2"
             >
               <FileText className="w-4 h-4" /> Build Itinerary
@@ -87,7 +87,7 @@ export default function DashboardPage() {
           <div className="flex justify-between items-center border-b border-black pb-4">
             <h3 className="text-sm font-bold uppercase tracking-wider flex items-center gap-2">
               <span className="w-2 h-2 bg-black inline-block" />
-              Recent Client Quotations & Itineraries
+              Recent Client Activity
             </h3>
             <Link href="/dashboard/quotations" className="text-xs font-mono underline uppercase hover:opacity-60">
               View All ↗
@@ -145,7 +145,7 @@ export default function DashboardPage() {
               <p className="text-[11px] text-zinc-600 group-hover:text-zinc-300">Update seasonal park fees & hotel bed-night rates.</p>
             </Link>
 
-            <Link href="/dashboard/invoices" className="block border border-black p-4 bg-[#F4F4F0] hover:bg-black hover:text-white transition-colors group">
+            <Link href="/dashboard/invoice" className="block border border-black p-4 bg-[#F4F4F0] hover:bg-black hover:text-white transition-colors group">
               <div className="flex justify-between items-center mb-1">
                 <span className="text-xs font-bold uppercase tracking-tight group-hover:text-white">Invoice Generator</span>
                 <FileText className="w-4 h-4" />
@@ -166,8 +166,8 @@ export default function DashboardPage() {
 
       </section>
 
-      {/* Footer */}
-      <Footer />
+      
+      <AdminFooter />
 
     </main>
   );

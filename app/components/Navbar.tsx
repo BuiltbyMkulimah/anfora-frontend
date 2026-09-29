@@ -29,9 +29,9 @@ export default function Navbar({ activeTab }: NavbarProps) {
 
         </div>
 
-        {/* Call to Action Button Element */}
+       
         <Link 
-          href="/signup" 
+          href="/createaccount" 
           className="border border-black px-3 py-1 bg-black text-white font-bold text-[10px] hover:bg-transparent hover:text-black transition-colors"
         >
           START NOW ↗
